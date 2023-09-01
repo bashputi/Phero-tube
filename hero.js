@@ -9,7 +9,7 @@ const handleCategory = async () => {
         const div = document.createElement("div");
         div.innerHTML = `
         <button onclick="handleLoadNews('${category.category_id}')" class="btn 
-        shadow-lg mx-3">
+        shadow-lg mx-3 mt-6">
        <a  class="tab">${category.category} </a> </button>
         `;
         tabContainer.appendChild(div);
@@ -30,7 +30,7 @@ const handleLoadNews = async (categoryId) => {
         
         
     const div = document.createElement("div");
-    div.classList = `card card-compact w-96 bg-base-100 w-[312px] shadow-xl`;
+    div.classList = `card card-compact ml-14 md:ml-8 lg:ml-1 w-96 bg-base-100 w-[312px] h-[300px] mb-4 shadow-xl`;
     div.innerHTML = `
         <figure class="w-[312px] h-[200px]" ><img src="${news?.thumbnail}" class="card card-compact" alt="video" /></figure>
         <span class="bg-black text-white w-[100px]">222222</span>
@@ -53,4 +53,4 @@ const handleLoadNews = async (categoryId) => {
 };
 
  handleCategory();
-//   handleLoadNews();
+  handleLoadNews('1000');

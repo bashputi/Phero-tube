@@ -36,8 +36,10 @@ const handleLoadNews = async (categoryId) => {
     const div = document.createElement("div");
     div.classList = `card card-compact ml-14 md:ml-8 lg:ml-1 w-96 bg-base-100 w-[312px] h-[300px] mb-4 shadow-xl`;
     div.innerHTML = `
-        <figure class="w-[312px] h-[200px]" ><img src="${news?.thumbnail}" class="card card-compact" alt="video" /></figure>
-           <div> ${news.others.posted_date}</div>
+        <figure class="w-[312px] h-[200px] relative" ><img src="${news?.thumbnail}" class="card card-compact" alt="video" /></figure>
+         <div class="grid place-items-end"> 
+          <div class="bg-black place-items-end rounded-lg absolute text-white mb-6 mr-3 px-2"> ${news.others.posted_date}</div>
+          </div>
         <div class="card-body grid grid-cols-2">
             <div>
                 <img src="${news?.authors[0].profile_picture}" class="rounded-full w-10 h-10" >

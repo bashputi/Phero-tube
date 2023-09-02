@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+      <!-- daisyUl  -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+
+  <h1 class="text-center text-5xl font-bold my-12 text-[#db2777]">Explore More To Learn More...</h1>
+
+
+  <div class=" container mx-auto">
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" checked="checked" /> 
+    <div class="collapse-title text-xl font-medium">
+      Discuss the scope of var, let, and const
+    </div>
+    <div class="collapse-content"> 
+      <p>In JavaScript, the keywords var, let, and const are a bit confusing. 
+        So, in this shot, we will look at the differences between these keywords.</p>
+        <b>Explanation:</b>
+        <li>In the <span class="text-red-600">var</span> tab, when you will run the code, you will see an error as a is not defined because var variables are only accessible in the function scope.</li>
+        <li>In the <span class="text-red-600">let</span> tab, when you run the code, you will see an error as i is not defined because let variables are only accessible within the block they are declared.</li>
+        <li>In the <span class="text-red-600">const</span> tab, when you run the code, you will see that x was defined under the block was accessible, but when you try to access x outside that block, you will get an error.</li>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" /> 
+    <div class="collapse-title text-xl font-medium">
+      Tell us the use cases of null and undefined
+    </div>
+    <div class="collapse-content"> 
+      <p>
+        In programming, `<b>null</b>` and `<b>undefined</b>` are two distinct values that
+        are often used to represent missing or absent data, but they are used in slightly
+        different contexts and have different use cases:
+        <br> <BR></BR>
+        <P>1 `<b>null</b>` :</P> <br>
+        <li><b>Explicit Absence</b>: It is a value that represents the intentional absence of any object value or a placeholder for an object that doesn't exist. </li>
+          <li><b>Assigned by the Programmer</b>: It is typically assigned by a programmer to indicate that a variable should have no value or that an object property intentionally has no reference.</li>
+      </p>
+      <p>2 `<b>undefined</b>` :</p> <br>
+      <li><b>Implicit Absence</b>: It is a value that indicates the absence of a value, often because a variable has been declared but not assigned any value.
+      </li>
+      <li><b>Use Cases</b>: Some common use cases for undefined include checking if a variable has been initialized, determining if an object property exists, or detecting missing function arguments.</li>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" /> 
+    <div class="collapse-title text-xl font-medium">
+      What do you mean by REST API?
+    </div>
+    <div class="collapse-content"> 
+      <p>
+        REST API stands for Representational State Transfer Application Programming Interface. It is an 
+        architectural style and a set of constraints for designing networked applications. REST
+        is not a tecnology itself but rather a set of principles and constraints for creating web
+        services that are scalable, stateless, and easy to maintain.  <br><br>
+        <span>Here are some key Characteristics and principles of REST API's :</span>
+         <br>
+            <ol>
+          <li class="font-bold">1.Stalelessness</li>
+          <li class="font-bold">2.Client-server Architecture</li>
+          <li class="font-bold">3.Uniform Interface</li>
+          <li class="font-bold">4.Resource-Based</li>
+          <li class="font-bold">
+           5. CRUD Operation
+          </li>
+        </ol>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
